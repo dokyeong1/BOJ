@@ -16,6 +16,7 @@ int main()
     int a, b;
     cin >> a >>b;
     printGreater(a, b);
+    return 0;
 }
               
 
