@@ -2,19 +2,18 @@
 
 using namespace std;
 
-void print(int a){
-    if(a%4==0&&a%100!=0) cout << "1";
-    else if(a%400==0) cout <<"1";
-    else cout <<"0";
+void print(int a,int b){
+    if(a>0&&b>0) cout << "1";
+    else if(a<0&&b>0) cout << "2";
+    else if(a<0&&b<0) cout << "3";
+    else cout <<"4";
 }
 
 int main(){
-    int a;
-    cin >> a;
-    print(a);
+    int a,b;
+    cin >> a>>b;
+    print(a,b);
     return 0;
 }
-
-
 
 
